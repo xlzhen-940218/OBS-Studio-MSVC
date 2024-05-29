@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aja-card-manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="aja-common.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="aja-output.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="aja-presets.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="aja-props.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="aja-routing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="aja-source.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="aja-vpid-data.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="aja-widget-io.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="audio-repack.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="double-slider.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="horizontal-scroll-area.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="plain-text-edit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="properties-view.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="qt-wrappers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="slider-ignorewheel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spinbox-ignorewheel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vertical-scroll-area.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AJAOutputUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="aja-ui-main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_AJAOutputUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_double-slider.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_plain-text-edit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_properties-view.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_slider-ignorewheel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_spinbox-ignorewheel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_horizontal-scroll-area.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_properties-view.moc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_vertical-scroll-area.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aja-card-manager.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="aja-common.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="aja-enums.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="aja-output.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="aja-presets.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="aja-props.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="aja-routing.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="aja-source.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="aja-ui-props.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="aja-vpid-data.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="aja-widget-io.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="audio-repack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="audio-repack.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="double-slider.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="horizontal-scroll-area.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="plain-text-edit.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="properties-view.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="properties-view.moc.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="qt-wrappers.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="slider-ignorewheel.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spinbox-ignorewheel.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vertical-scroll-area.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AJAOutputUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="aja-ui-main.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_output.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-main.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-app.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-app-theming.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

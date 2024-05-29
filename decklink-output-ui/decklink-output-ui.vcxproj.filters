@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clickable-label.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DecklinkOutputUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="decklink-ui-main.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="double-slider.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="horizontal-scroll-area.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="plain-text-edit.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="properties-view.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="properties-view.moc.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="qt-wrappers.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="slider-ignorewheel.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spinbox-ignorewheel.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vertical-scroll-area.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_output.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-app.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="const.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-app-theming.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-main.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DecklinkOutputUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="decklink-ui-main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="double-slider.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="horizontal-scroll-area.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="plain-text-edit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="properties-view.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="qt-wrappers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="slider-ignorewheel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spinbox-ignorewheel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vertical-scroll-area.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_clickable-label.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_double-slider.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_horizontal-scroll-area.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_plain-text-edit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_properties-view.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_properties-view.moc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_slider-ignorewheel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_spinbox-ignorewheel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_vertical-scroll-area.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_DecklinkOutputUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

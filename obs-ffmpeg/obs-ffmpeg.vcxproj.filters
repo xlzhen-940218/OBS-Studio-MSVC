@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cache.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="decode.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ffmpeg-mux.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="media.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="media-playback.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-ffmpeg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-ffmpeg-audio-encoders.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-ffmpeg-av1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-ffmpeg-hls-mux.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-ffmpeg-logging.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-ffmpeg-mpegts.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-ffmpeg-mux.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-ffmpeg-nvenc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-ffmpeg-output.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-ffmpeg-source.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-ffmpeg-video-encoders.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-nvenc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-nvenc-helpers.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="texture-amf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cache.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="closest-format.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="decode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ffmpeg-mux.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="media.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="media-playback.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-ffmpeg-compat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-ffmpeg-formats.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-ffmpeg-mux.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-ffmpeg-output.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-ffmpeg-rist.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-ffmpeg-srt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-ffmpeg-url.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-ffmpeg-video-encoders.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-nvenc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-nvenc-ver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="texture-amf-opts.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

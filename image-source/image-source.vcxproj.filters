@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="color-source.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="image-source.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-slideshow.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-slideshow-mk2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\locale\af-ZA.ini" />
+    <None Include="data\locale\ar-SA.ini" />
+    <None Include="data\locale\az-AZ.ini" />
+    <None Include="data\locale\ba-RU.ini" />
+    <None Include="data\locale\be-BY.ini" />
+    <None Include="data\locale\bg-BG.ini" />
+    <None Include="data\locale\bn-BD.ini" />
+    <None Include="data\locale\ca-ES.ini" />
+    <None Include="data\locale\cs-CZ.ini" />
+    <None Include="data\locale\da-DK.ini" />
+    <None Include="data\locale\de-DE.ini" />
+    <None Include="data\locale\el-GR.ini" />
+    <None Include="data\locale\en-GB.ini" />
+    <None Include="data\locale\en-US.ini" />
+    <None Include="data\locale\es-ES.ini" />
+    <None Include="data\locale\et-EE.ini" />
+    <None Include="data\locale\eu-ES.ini" />
+    <None Include="data\locale\fa-IR.ini" />
+    <None Include="data\locale\fi-FI.ini" />
+    <None Include="data\locale\fil-PH.ini" />
+    <None Include="data\locale\fr-FR.ini" />
+    <None Include="data\locale\gd-GB.ini" />
+    <None Include="data\locale\gl-ES.ini" />
+    <None Include="data\locale\he-IL.ini" />
+    <None Include="data\locale\hi-IN.ini" />
+    <None Include="data\locale\hr-HR.ini" />
+    <None Include="data\locale\hu-HU.ini" />
+    <None Include="data\locale\hy-AM.ini" />
+    <None Include="data\locale\id-ID.ini" />
+    <None Include="data\locale\it-IT.ini" />
+    <None Include="data\locale\ja-JP.ini" />
+    <None Include="data\locale\kaa.ini" />
+    <None Include="data\locale\kab-KAB.ini" />
+    <None Include="data\locale\ka-GE.ini" />
+    <None Include="data\locale\kmr-TR.ini" />
+    <None Include="data\locale\ko-KR.ini" />
+    <None Include="data\locale\lo-LA.ini" />
+    <None Include="data\locale\lt-LT.ini" />
+    <None Include="data\locale\mn-MN.ini" />
+    <None Include="data\locale\ms-MY.ini" />
+    <None Include="data\locale\nb-NO.ini" />
+    <None Include="data\locale\nl-NL.ini" />
+    <None Include="data\locale\nn-NO.ini" />
+    <None Include="data\locale\oc-FR.ini" />
+    <None Include="data\locale\pa-IN.ini" />
+    <None Include="data\locale\pl-PL.ini" />
+    <None Include="data\locale\pt-BR.ini" />
+    <None Include="data\locale\pt-PT.ini" />
+    <None Include="data\locale\ro-RO.ini" />
+    <None Include="data\locale\ru-RU.ini" />
+    <None Include="data\locale\si-LK.ini" />
+    <None Include="data\locale\sk-SK.ini" />
+    <None Include="data\locale\sl-SI.ini" />
+    <None Include="data\locale\sr-CS.ini" />
+    <None Include="data\locale\sr-SP.ini" />
+    <None Include="data\locale\sv-SE.ini" />
+    <None Include="data\locale\ta-IN.ini" />
+    <None Include="data\locale\th-TH.ini" />
+    <None Include="data\locale\tl-PH.ini" />
+    <None Include="data\locale\tr-TR.ini" />
+    <None Include="data\locale\ug-CN.ini" />
+    <None Include="data\locale\uk-UA.ini" />
+    <None Include="data\locale\ur-PK.ini" />
+    <None Include="data\locale\vi-VN.ini" />
+    <None Include="data\locale\zh-CN.ini" />
+    <None Include="data\locale\zh-TW.ini" />
+  </ItemGroup>
+</Project>

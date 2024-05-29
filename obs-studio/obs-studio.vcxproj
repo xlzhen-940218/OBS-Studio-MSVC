@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c0b3ac7b-3850-478d-8bf1-58aa39d49648}</ProjectGuid>
+    <RootNamespace>obsstudio</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BROWSER_AVAILABLE;WHATSNEW_ENABLED;PSAPI_VERSION=2;DL_OPENGL="libobs-opengl.dll";DL_METAL="";DL_D3D11="libobs-d3d11.dll";SAFE_MODULES="libobs-d3d11|libobs-winrt|aja|coreaudio-encoder|decklink|image-source|obs-browser|obs-ffmpeg|obs-filters|obs-outputs|obs-qsv11|obs-text|obs-transitions|obs-vst|obs-webrtc|obs-websocket|obs-x264|rtmp-services|text-freetype2|vlc-video|win-capture|graphics-hook|obs-virtualcam-module|win-dshow|win-wasapi|aja-output-ui|decklink-captions|decklink-output-ui|obslua|obspython|frontend-tools";UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;DEBUG;_DEBUG;ENABLE_HEVC;HAVE_OBSCONFIG_H;QT_WIDGETS_LIB;QT_CORE_LIB;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_WIN64;QT_GUI_LIB;QT_SVG_LIB;QT_XML_LIB;QT_NETWORK_LIB</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\libobs;..\include;..\updater;..\obs-frontend-api;..\json11;..\w32-pthreads;..\obs-browser;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/Zc:__cplusplus -Zc:__cplusplus -utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\lib\libcurl_imp.lib;crypt32.lib;..\lib\mbedtls.lib;..\lib\detours.lib;..\lib\avcodec.lib;..\lib\avutil.lib;..\lib\avformat.lib;..\lib\Qt6Widgetsd.lib;..\lib\Qt6Svgd.lib;..\lib\Qt6Guid.lib;d3d11.lib;dxgi.lib;dxguid.lib;d3d12.lib;..\lib\Qt6Xmld.lib;..\lib\Qt6Networkd.lib;..\lib\Qt6Cored.lib;mpr.lib;userenv.lib;..\lib\Qt6EntryPointd.lib;shell32.lib;ws2_32.lib;..\lib\mbedcrypto.lib;..\lib\mbedx509.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\aja-output-ui\aja-output-ui.vcxproj">
+      <Project>{65435e09-ab97-438a-b332-bf829afa3286}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\aja\aja.vcxproj">
+      <Project>{be79fa7f-cb6c-409d-a246-89c8c4ab14b3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\blake2\blake2.vcxproj">
+      <Project>{440dac7b-1751-47b3-bf0a-e54d400d5b4f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\coreaudio-encoder\coreaudio-encoder.vcxproj">
+      <Project>{8d0ae720-ae4b-43b4-ade2-7c8e1b41ff48}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\decklink-captions\decklink-captions.vcxproj">
+      <Project>{df76d0d5-81d8-470b-bcdd-ec9681c84c06}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\decklink-output-ui\decklink-output-ui.vcxproj">
+      <Project>{2f30d083-b16f-4309-9f61-6a5f7fa30de0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\frontend-tools\frontend-tools.vcxproj">
+      <Project>{fb42e6b9-0d15-4b9c-ae01-fb840065b653}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\json11\json11.vcxproj">
+      <Project>{80984cce-7029-4e74-b62b-df2f3774a9d6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libobs-d3d11\libobs-d3d11.vcxproj">
+      <Project>{c34a212d-7aac-404c-8e51-668947c251b6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libobs-opengl\libobs-opengl.vcxproj">
+      <Project>{894953f5-1ae8-45b6-bf4a-801918a0261f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libobs-winrt\libobs-winrt.vcxproj">
+      <Project>{bac878b6-8ccc-4188-9bea-99ef31fe0bd1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libobs\libobs.vcxproj">
+      <Project>{de007541-301d-41f8-879d-28f4195f8431}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\obs-browser\obs-browser.vcxproj">
+      <Project>{6a6c2ba3-469f-43a0-bda5-596c89466bec}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\obs-ffmpeg\obs-ffmpeg.vcxproj">
+      <Project>{e5a2c860-81bf-4839-80dd-cf3ae34e8e54}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\obs-filters\obs-filters.vcxproj">
+      <Project>{d51dbc71-88d8-42dc-9a96-75904cd3395e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\obs-frontend-api\obs-frontend-api.vcxproj">
+      <Project>{ff96b609-f734-4a83-834b-b743b79043f9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\obs-outputs\obs-outputs.vcxproj">
+      <Project>{02b61d90-04f6-44ab-91fb-f02fcd426b9c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\obs-qsv11\obs-qsv11.vcxproj">
+      <Project>{b9b3bea1-6130-450d-bfd1-cb0cbae2beec}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\obs-text\obs-text.vcxproj">
+      <Project>{a1189de0-47b5-40f6-ae34-7ff5a4260859}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\obs-transitions\obs-transitions.vcxproj">
+      <Project>{97a0369f-32cc-41d1-bfa3-6373617e89c3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\obs-virtualcam-module\obs-virtualcam-module.vcxproj">
+      <Project>{90fbe262-68fb-4a8a-8f9a-f6d364f23d90}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\obs-vst\obs-vst.vcxproj">
+      <Project>{58cfbca9-17a0-4b91-9661-12e286a01765}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\obs-webrtc\obs-webrtc.vcxproj">
+      <Project>{457904bc-5e1b-4d16-a503-a32547a235ab}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\obs-websocket\obs-websocket.vcxproj">
+      <Project>{8a064849-400a-4e8b-9c55-16d2061fcd26}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\obs-x264\obs-x264.vcxproj">
+      <Project>{488a0f34-9337-439e-a56d-a6f918c440c8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\rtmp-services\rtmp-services.vcxproj">
+      <Project>{7ef164a4-8f79-43dc-b03b-22015d9976f4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\text-freetype2\text-freetype2.vcxproj">
+      <Project>{2540f43f-6272-41c8-8855-21e36fad882f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vlc-video\vlc-video.vcxproj">
+      <Project>{876bf5a4-8ceb-451c-9814-20b537eb8fc9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\w32-pthreads\w32-pthreads.vcxproj">
+      <Project>{43b240e7-ea3c-452b-9138-c0347351f40a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win-capture\win-capture.vcxproj">
+      <Project>{dee94d97-35fd-44c6-8e80-d72cb715903d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win-dshow\win-dshow.vcxproj">
+      <Project>{513d3feb-9243-4bd5-8603-429fbfeb61fe}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win-wasapi\win-wasapi.vcxproj">
+      <Project>{562b57ed-c4d0-48fd-83f7-d1a56e17ba6c}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="adv-audio-control.cpp" />
+    <ClCompile Include="api-interface.cpp" />
+    <ClCompile Include="audio-encoders.cpp" />
+    <ClCompile Include="auth-base.cpp" />
+    <ClCompile Include="auth-listener.cpp" />
+    <ClCompile Include="auth-oauth.cpp" />
+    <ClCompile Include="context-bar-controls.cpp" />
+    <ClCompile Include="double-slider.cpp" />
+    <ClCompile Include="ffmpeg-utils.cpp" />
+    <ClCompile Include="focus-list.cpp" />
+    <ClCompile Include="horizontal-scroll-area.cpp" />
+    <ClCompile Include="hotkey-edit.cpp" />
+    <ClCompile Include="importers\classic.cpp" />
+    <ClCompile Include="importers\importers.cpp" />
+    <ClCompile Include="importers\sl.cpp" />
+    <ClCompile Include="importers\studio.cpp" />
+    <ClCompile Include="importers\xsplit.cpp" />
+    <ClCompile Include="item-widget-helpers.cpp" />
+    <ClCompile Include="lineedit-autoresize.cpp" />
+    <ClCompile Include="log-viewer.cpp" />
+    <ClCompile Include="media-controls.cpp" />
+    <ClCompile Include="media-slider.cpp" />
+    <ClCompile Include="menu-button.cpp" />
+    <ClCompile Include="moc_adv-audio-control.cpp" />
+    <ClCompile Include="moc_auth-base.cpp" />
+    <ClCompile Include="moc_auth-listener.cpp" />
+    <ClCompile Include="moc_auth-oauth.cpp" />
+    <ClCompile Include="moc_balance-slider.cpp" />
+    <ClCompile Include="moc_clickable-label.cpp" />
+    <ClCompile Include="moc_context-bar-controls.cpp" />
+    <ClCompile Include="moc_double-slider.cpp" />
+    <ClCompile Include="moc_focus-list.cpp" />
+    <ClCompile Include="moc_horizontal-scroll-area.cpp" />
+    <ClCompile Include="moc_hotkey-edit.cpp" />
+    <ClCompile Include="moc_lineedit-autoresize.cpp" />
+    <ClCompile Include="moc_log-viewer.cpp" />
+    <ClCompile Include="moc_media-controls.cpp" />
+    <ClCompile Include="moc_media-slider.cpp" />
+    <ClCompile Include="moc_menu-button.cpp" />
+    <ClCompile Include="moc_mute-checkbox.cpp" />
+    <ClCompile Include="moc_obs-app.cpp" />
+    <ClCompile Include="moc_plain-text-edit.cpp" />
+    <ClCompile Include="moc_properties-view.cpp" />
+    <ClCompile Include="moc_properties-view.moc.cpp" />
+    <ClCompile Include="moc_qt-display.cpp" />
+    <ClCompile Include="moc_record-button.cpp" />
+    <ClCompile Include="moc_remote-text.cpp" />
+    <ClCompile Include="moc_scene-tree.cpp" />
+    <ClCompile Include="moc_screenshot-obj.cpp" />
+    <ClCompile Include="moc_shared-update.cpp" />
+    <ClCompile Include="moc_slider-ignorewheel.cpp" />
+    <ClCompile Include="moc_source-label.cpp" />
+    <ClCompile Include="moc_source-tree.cpp" />
+    <ClCompile Include="moc_spinbox-ignorewheel.cpp" />
+    <ClCompile Include="moc_ui-validation.cpp" />
+    <ClCompile Include="moc_undo-stack-obs.cpp" />
+    <ClCompile Include="moc_update-window.cpp" />
+    <ClCompile Include="moc_url-push-button.cpp" />
+    <ClCompile Include="moc_vertical-scroll-area.cpp" />
+    <ClCompile Include="moc_visibility-item-widget.cpp" />
+    <ClCompile Include="moc_volume-control.cpp" />
+    <ClCompile Include="moc_win-update.cpp" />
+    <ClCompile Include="moc_window-basic-about.cpp" />
+    <ClCompile Include="moc_window-basic-adv-audio.cpp" />
+    <ClCompile Include="moc_window-basic-auto-config.cpp" />
+    <ClCompile Include="moc_window-basic-filters.cpp" />
+    <ClCompile Include="moc_window-basic-interaction.cpp" />
+    <ClCompile Include="moc_window-basic-main.cpp" />
+    <ClCompile Include="moc_window-basic-preview.cpp" />
+    <ClCompile Include="moc_window-basic-properties.cpp" />
+    <ClCompile Include="moc_window-basic-settings.cpp" />
+    <ClCompile Include="moc_window-basic-source-select.cpp" />
+    <ClCompile Include="moc_window-basic-stats.cpp" />
+    <ClCompile Include="moc_window-basic-status-bar.cpp" />
+    <ClCompile Include="moc_window-basic-transform.cpp" />
+    <ClCompile Include="moc_window-basic-vcam-config.cpp" />
+    <ClCompile Include="moc_window-dock.cpp" />
+    <ClCompile Include="moc_window-extra-browsers.cpp" />
+    <ClCompile Include="moc_window-importer.cpp" />
+    <ClCompile Include="moc_window-log-reply.cpp" />
+    <ClCompile Include="moc_window-main.cpp" />
+    <ClCompile Include="moc_window-missing-files.cpp" />
+    <ClCompile Include="moc_window-namedialog.cpp" />
+    <ClCompile Include="moc_window-projector.cpp" />
+    <ClCompile Include="moc_window-remux.cpp" />
+    <ClCompile Include="multiview.cpp" />
+    <ClCompile Include="obf.c" />
+    <ClCompile Include="obs-app-theming.cpp" />
+    <ClCompile Include="obs-app.cpp" />
+    <ClCompile Include="obs-proxy-style.cpp" />
+    <ClCompile Include="plain-text-edit.cpp" />
+    <ClCompile Include="platform-windows.cpp" />
+    <ClCompile Include="properties-view.cpp" />
+    <ClCompile Include="qt-display.cpp" />
+    <ClCompile Include="qt-wrappers.cpp" />
+    <ClCompile Include="record-button.cpp" />
+    <ClCompile Include="remote-text.cpp" />
+    <ClCompile Include="scene-tree.cpp" />
+    <ClCompile Include="slider-absoluteset-style.cpp" />
+    <ClCompile Include="slider-ignorewheel.cpp" />
+    <ClCompile Include="source-label.cpp" />
+    <ClCompile Include="source-tree.cpp" />
+    <ClCompile Include="spinbox-ignorewheel.cpp" />
+    <ClCompile Include="ui-validation.cpp" />
+    <ClCompile Include="undo-stack-obs.cpp" />
+    <ClCompile Include="update\crypto-helpers-mbedtls.cpp" />
+    <ClCompile Include="update\shared-update.cpp" />
+    <ClCompile Include="update\update-helpers.cpp" />
+    <ClCompile Include="update\update-window.cpp" />
+    <ClCompile Include="update\win-update.cpp" />
+    <ClCompile Include="url-push-button.cpp" />
+    <ClCompile Include="vertical-scroll-area.cpp" />
+    <ClCompile Include="visibility-item-widget.cpp" />
+    <ClCompile Include="volume-control.cpp" />
+    <ClCompile Include="win-dll-blocklist.c" />
+    <ClCompile Include="window-basic-about.cpp" />
+    <ClCompile Include="window-basic-adv-audio.cpp" />
+    <ClCompile Include="window-basic-auto-config-test.cpp" />
+    <ClCompile Include="window-basic-auto-config.cpp" />
+    <ClCompile Include="window-basic-filters.cpp" />
+    <ClCompile Include="window-basic-interaction.cpp" />
+    <ClCompile Include="window-basic-main-browser.cpp" />
+    <ClCompile Include="window-basic-main-dropfiles.cpp" />
+    <ClCompile Include="window-basic-main-icons.cpp" />
+    <ClCompile Include="window-basic-main-outputs.cpp" />
+    <ClCompile Include="window-basic-main-profiles.cpp" />
+    <ClCompile Include="window-basic-main-scene-collections.cpp" />
+    <ClCompile Include="window-basic-main-screenshot.cpp" />
+    <ClCompile Include="window-basic-main-transitions.cpp" />
+    <ClCompile Include="window-basic-main.cpp" />
+    <ClCompile Include="window-basic-preview.cpp" />
+    <ClCompile Include="window-basic-properties.cpp" />
+    <ClCompile Include="window-basic-settings-a11y.cpp" />
+    <ClCompile Include="window-basic-settings-appearance.cpp" />
+    <ClCompile Include="window-basic-settings-stream.cpp" />
+    <ClCompile Include="window-basic-settings.cpp" />
+    <ClCompile Include="window-basic-source-select.cpp" />
+    <ClCompile Include="window-basic-stats.cpp" />
+    <ClCompile Include="window-basic-status-bar.cpp" />
+    <ClCompile Include="window-basic-transform.cpp" />
+    <ClCompile Include="window-basic-vcam-config.cpp" />
+    <ClCompile Include="window-dock-browser.cpp" />
+    <ClCompile Include="window-dock.cpp" />
+    <ClCompile Include="window-extra-browsers.cpp" />
+    <ClCompile Include="window-importer.cpp" />
+    <ClCompile Include="window-log-reply.cpp" />
+    <ClCompile Include="window-missing-files.cpp" />
+    <ClCompile Include="window-namedialog.cpp" />
+    <ClCompile Include="window-projector.cpp" />
+    <ClCompile Include="window-remux.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="adv-audio-control.hpp" />
+    <ClInclude Include="audio-encoders.hpp" />
+    <ClInclude Include="auth-base.hpp" />
+    <ClInclude Include="auth-listener.hpp" />
+    <ClInclude Include="auth-oauth.hpp" />
+    <ClInclude Include="balance-slider.hpp" />
+    <ClInclude Include="clickable-label.hpp" />
+    <ClInclude Include="context-bar-controls.hpp" />
+    <ClInclude Include="display-helpers.hpp" />
+    <ClInclude Include="double-slider.hpp" />
+    <ClInclude Include="ffmpeg-utils.hpp" />
+    <ClInclude Include="focus-list.hpp" />
+    <ClInclude Include="horizontal-scroll-area.hpp" />
+    <ClInclude Include="hotkey-edit.hpp" />
+    <ClInclude Include="importers\importers.hpp" />
+    <ClInclude Include="item-widget-helpers.hpp" />
+    <ClInclude Include="lineedit-autoresize.hpp" />
+    <ClInclude Include="log-viewer.hpp" />
+    <ClInclude Include="media-controls.hpp" />
+    <ClInclude Include="media-slider.hpp" />
+    <ClInclude Include="menu-button.hpp" />
+    <ClInclude Include="multiview.hpp" />
+    <ClInclude Include="mute-checkbox.hpp" />
+    <ClInclude Include="obf.h" />
+    <ClInclude Include="obs-app-theming.hpp" />
+    <ClInclude Include="obs-app.hpp" />
+    <ClInclude Include="obs-proxy-style.hpp" />
+    <ClInclude Include="plain-text-edit.hpp" />
+    <ClInclude Include="platform.hpp" />
+    <ClInclude Include="properties-view.hpp" />
+    <ClInclude Include="properties-view.moc.hpp" />
+    <ClInclude Include="qt-display.hpp" />
+    <ClInclude Include="qt-wrappers.hpp" />
+    <ClInclude Include="record-button.hpp" />
+    <ClInclude Include="remote-text.hpp" />
+    <ClInclude Include="scene-tree.hpp" />
+    <ClInclude Include="screenshot-obj.hpp" />
+    <ClInclude Include="slider-absoluteset-style.hpp" />
+    <ClInclude Include="slider-ignorewheel.hpp" />
+    <ClInclude Include="source-label.hpp" />
+    <ClInclude Include="source-tree.hpp" />
+    <ClInclude Include="spinbox-ignorewheel.hpp" />
+    <ClInclude Include="ui-config.h" />
+    <ClInclude Include="ui-validation.hpp" />
+    <ClInclude Include="ui_AutoConfigStartPage.h" />
+    <ClInclude Include="ui_AutoConfigStreamPage.h" />
+    <ClInclude Include="ui_AutoConfigTestPage.h" />
+    <ClInclude Include="ui_AutoConfigVideoPage.h" />
+    <ClInclude Include="ui_browser-source-toolbar.h" />
+    <ClInclude Include="ui_color-source-toolbar.h" />
+    <ClInclude Include="ui_ColorSelect.h" />
+    <ClInclude Include="ui_device-select-toolbar.h" />
+    <ClInclude Include="ui_game-capture-toolbar.h" />
+    <ClInclude Include="ui_image-source-toolbar.h" />
+    <ClInclude Include="ui_media-controls.h" />
+    <ClInclude Include="ui_OBSAbout.h" />
+    <ClInclude Include="ui_OBSAdvAudio.h" />
+    <ClInclude Include="ui_OBSBasic.h" />
+    <ClInclude Include="ui_OBSBasicFilters.h" />
+    <ClInclude Include="ui_OBSBasicInteraction.h" />
+    <ClInclude Include="ui_OBSBasicProperties.h" />
+    <ClInclude Include="ui_OBSBasicSettings.h" />
+    <ClInclude Include="ui_OBSBasicSourceSelect.h" />
+    <ClInclude Include="ui_OBSBasicTransform.h" />
+    <ClInclude Include="ui_OBSBasicVCamConfig.h" />
+    <ClInclude Include="ui_OBSExtraBrowsers.h" />
+    <ClInclude Include="ui_OBSImporter.h" />
+    <ClInclude Include="ui_OBSLogReply.h" />
+    <ClInclude Include="ui_OBSLogViewer.h" />
+    <ClInclude Include="ui_OBSMissingFiles.h" />
+    <ClInclude Include="ui_OBSRemux.h" />
+    <ClInclude Include="ui_OBSUpdate.h" />
+    <ClInclude Include="ui_StatusBarWidget.h" />
+    <ClInclude Include="ui_text-source-toolbar.h" />
+    <ClInclude Include="undo-stack-obs.hpp" />
+    <ClInclude Include="update\crypto-helpers.hpp" />
+    <ClInclude Include="update\models\branches.hpp" />
+    <ClInclude Include="update\models\whatsnew.hpp" />
+    <ClInclude Include="update\shared-update.hpp" />
+    <ClInclude Include="update\update-helpers.hpp" />
+    <ClInclude Include="update\update-window.hpp" />
+    <ClInclude Include="update\win-update.hpp" />
+    <ClInclude Include="url-push-button.hpp" />
+    <ClInclude Include="vertical-scroll-area.hpp" />
+    <ClInclude Include="visibility-item-widget.hpp" />
+    <ClInclude Include="volume-control.hpp" />
+    <ClInclude Include="window-basic-about.hpp" />
+    <ClInclude Include="window-basic-adv-audio.hpp" />
+    <ClInclude Include="window-basic-auto-config.hpp" />
+    <ClInclude Include="window-basic-filters.hpp" />
+    <ClInclude Include="window-basic-interaction.hpp" />
+    <ClInclude Include="window-basic-main-outputs.hpp" />
+    <ClInclude Include="window-basic-main.hpp" />
+    <ClInclude Include="window-basic-preview.hpp" />
+    <ClInclude Include="window-basic-properties.hpp" />
+    <ClInclude Include="window-basic-settings.hpp" />
+    <ClInclude Include="window-basic-source-select.hpp" />
+    <ClInclude Include="window-basic-stats.hpp" />
+    <ClInclude Include="window-basic-status-bar.hpp" />
+    <ClInclude Include="window-basic-transform.hpp" />
+    <ClInclude Include="window-basic-vcam-config.hpp" />
+    <ClInclude Include="window-basic-vcam.hpp" />
+    <ClInclude Include="window-dock-browser.hpp" />
+    <ClInclude Include="window-dock.hpp" />
+    <ClInclude Include="window-extra-browsers.hpp" />
+    <ClInclude Include="window-importer.hpp" />
+    <ClInclude Include="window-log-reply.hpp" />
+    <ClInclude Include="window-main.hpp" />
+    <ClInclude Include="window-missing-files.hpp" />
+    <ClInclude Include="window-namedialog.hpp" />
+    <ClInclude Include="window-projector.hpp" />
+    <ClInclude Include="window-remux.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="obs-studio.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

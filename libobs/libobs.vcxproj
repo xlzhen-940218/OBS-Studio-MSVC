@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{de007541-301d-41f8-879d-28f4195f8431}</ProjectGuid>
+    <RootNamespace>libobs</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;IS_LIBOBS;ENABLE_HEVC;HAVE_OBSCONFIG_H;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;DEBUG;_DEBUG;libobs_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\w32-pthreads;..\libobs-version;..\caption;..\include</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Avrt.lib;Dwmapi.lib;Dxgi.lib;winmm.lib;Rpcrt4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;../lib/avcodec.lib;../lib/avutil.lib;../lib/avformat.lib;../lib/swresample.lib;../lib/swscale.lib;../lib/jansson.lib;../lib/zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="audio-monitoring\win32\wasapi-enum-devices.c" />
+    <ClCompile Include="audio-monitoring\win32\wasapi-monitoring-available.c" />
+    <ClCompile Include="audio-monitoring\win32\wasapi-output.c" />
+    <ClCompile Include="callback\calldata.c" />
+    <ClCompile Include="callback\decl.c" />
+    <ClCompile Include="callback\proc.c" />
+    <ClCompile Include="callback\signal.c" />
+    <ClCompile Include="graphics\axisang.c" />
+    <ClCompile Include="graphics\bounds.c" />
+    <ClCompile Include="graphics\effect-parser.c" />
+    <ClCompile Include="graphics\effect.c" />
+    <ClCompile Include="graphics\graphics-ffmpeg.c" />
+    <ClCompile Include="graphics\graphics-imports.c" />
+    <ClCompile Include="graphics\graphics.c" />
+    <ClCompile Include="graphics\image-file.c" />
+    <ClCompile Include="graphics\libnsgif\libnsgif.c" />
+    <ClCompile Include="graphics\math-extra.c" />
+    <ClCompile Include="graphics\matrix3.c" />
+    <ClCompile Include="graphics\matrix4.c" />
+    <ClCompile Include="graphics\plane.c" />
+    <ClCompile Include="graphics\quat.c" />
+    <ClCompile Include="graphics\shader-parser.c" />
+    <ClCompile Include="graphics\texture-render.c" />
+    <ClCompile Include="graphics\vec2.c" />
+    <ClCompile Include="graphics\vec3.c" />
+    <ClCompile Include="graphics\vec4.c" />
+    <ClCompile Include="media-io\audio-io.c" />
+    <ClCompile Include="media-io\audio-resampler-ffmpeg.c" />
+    <ClCompile Include="media-io\format-conversion.c" />
+    <ClCompile Include="media-io\media-remux.c" />
+    <ClCompile Include="media-io\video-fourcc.c" />
+    <ClCompile Include="media-io\video-frame.c" />
+    <ClCompile Include="media-io\video-io.c" />
+    <ClCompile Include="media-io\video-matrices.c" />
+    <ClCompile Include="media-io\video-scaler-ffmpeg.c" />
+    <ClCompile Include="obs-audio-controls.c" />
+    <ClCompile Include="obs-audio.c" />
+    <ClCompile Include="obs-av1.c" />
+    <ClCompile Include="obs-avc.c" />
+    <ClCompile Include="obs-data.c" />
+    <ClCompile Include="obs-display.c" />
+    <ClCompile Include="obs-encoder.c" />
+    <ClCompile Include="obs-hevc.c" />
+    <ClCompile Include="obs-hotkey-name-map.c" />
+    <ClCompile Include="obs-hotkey.c" />
+    <ClCompile Include="obs-missing-files.c" />
+    <ClCompile Include="obs-module.c" />
+    <ClCompile Include="obs-nal.c" />
+    <ClCompile Include="obs-output-delay.c" />
+    <ClCompile Include="obs-output.c" />
+    <ClCompile Include="obs-properties.c" />
+    <ClCompile Include="obs-scene.c" />
+    <ClCompile Include="obs-service.c" />
+    <ClCompile Include="obs-source-deinterlace.c" />
+    <ClCompile Include="obs-source-transition.c" />
+    <ClCompile Include="obs-source.c" />
+    <ClCompile Include="obs-video-gpu-encode.c" />
+    <ClCompile Include="obs-video.c" />
+    <ClCompile Include="obs-view.c" />
+    <ClCompile Include="obs-win-crash-handler.c" />
+    <ClCompile Include="obs-windows.c" />
+    <ClCompile Include="obs.c" />
+    <ClCompile Include="util\array-serializer.c" />
+    <ClCompile Include="util\base.c" />
+    <ClCompile Include="util\bitstream.c" />
+    <ClCompile Include="util\bmem.c" />
+    <ClCompile Include="util\cf-lexer.c" />
+    <ClCompile Include="util\cf-parser.c" />
+    <ClCompile Include="util\config-file.c" />
+    <ClCompile Include="util\crc32.c" />
+    <ClCompile Include="util\dstr.c" />
+    <ClCompile Include="util\file-serializer.c" />
+    <ClCompile Include="util\lexer.c" />
+    <ClCompile Include="util\pipe-windows.c" />
+    <ClCompile Include="util\pipe.c" />
+    <ClCompile Include="util\platform-windows.c" />
+    <ClCompile Include="util\platform.c" />
+    <ClCompile Include="util\profiler.c" />
+    <ClCompile Include="util\task.c" />
+    <ClCompile Include="util\text-lookup.c" />
+    <ClCompile Include="util\threading-windows.c" />
+    <ClCompile Include="util\utf8.c" />
+    <ClCompile Include="util\windows\device-enum.c" />
+    <ClCompile Include="util\windows\obfuscate.c" />
+    <ClCompile Include="util\windows\window-helpers.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\caption\caption.vcxproj">
+      <Project>{4e61ca86-fdab-4fed-820d-b2d55d41ffb1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libobs-version\libobs-version.vcxproj">
+      <Project>{c34986a4-2d13-42da-9af0-348c92e8d7be}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\w32-pthreads\w32-pthreads.vcxproj">
+      <Project>{43b240e7-ea3c-452b-9138-c0347351f40a}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="audio-monitoring\win32\wasapi-output.h" />
+    <ClInclude Include="callback\calldata.h" />
+    <ClInclude Include="callback\decl.h" />
+    <ClInclude Include="callback\proc.h" />
+    <ClInclude Include="callback\signal.h" />
+    <ClInclude Include="graphics\axisang.h" />
+    <ClInclude Include="graphics\bounds.h" />
+    <ClInclude Include="graphics\effect-parser.h" />
+    <ClInclude Include="graphics\effect.h" />
+    <ClInclude Include="graphics\graphics.h" />
+    <ClInclude Include="graphics\image-file.h" />
+    <ClInclude Include="graphics\libnsgif\libnsgif.h" />
+    <ClInclude Include="graphics\math-extra.h" />
+    <ClInclude Include="graphics\matrix3.h" />
+    <ClInclude Include="graphics\matrix4.h" />
+    <ClInclude Include="graphics\plane.h" />
+    <ClInclude Include="graphics\quat.h" />
+    <ClInclude Include="graphics\shader-parser.h" />
+    <ClInclude Include="graphics\vec2.h" />
+    <ClInclude Include="graphics\vec3.h" />
+    <ClInclude Include="graphics\vec4.h" />
+    <ClInclude Include="include\jansson.h" />
+    <ClInclude Include="include\jansson_config.h" />
+    <ClInclude Include="include\obsconfig.h" />
+    <ClInclude Include="media-io\audio-io.h" />
+    <ClInclude Include="media-io\audio-math.h" />
+    <ClInclude Include="media-io\audio-resampler.h" />
+    <ClInclude Include="media-io\format-conversion.h" />
+    <ClInclude Include="media-io\frame-rate.h" />
+    <ClInclude Include="media-io\media-io-defs.h" />
+    <ClInclude Include="media-io\media-remux.h" />
+    <ClInclude Include="media-io\video-frame.h" />
+    <ClInclude Include="media-io\video-io.h" />
+    <ClInclude Include="media-io\video-scaler.h" />
+    <ClInclude Include="obs-audio-controls.h" />
+    <ClInclude Include="obs-av1.h" />
+    <ClInclude Include="obs-avc.h" />
+    <ClInclude Include="obs-config.h" />
+    <ClInclude Include="obs-data.h" />
+    <ClInclude Include="obs-encoder.h" />
+    <ClInclude Include="obs-ffmpeg-compat.h" />
+    <ClInclude Include="obs-hevc.h" />
+    <ClInclude Include="obs-hotkey.h" />
+    <ClInclude Include="obs-missing-files.h" />
+    <ClInclude Include="obs-module.h" />
+    <ClInclude Include="obs-nal.h" />
+    <ClInclude Include="obs-output.h" />
+    <ClInclude Include="obs-properties.h" />
+    <ClInclude Include="obs-scene.h" />
+    <ClInclude Include="obs-service.h" />
+    <ClInclude Include="obs-source.h" />
+    <ClInclude Include="obs.h" />
+    <ClInclude Include="obs.hpp" />
+    <ClInclude Include="include\uthash.h" />
+    <ClInclude Include="util\array-serializer.h" />
+    <ClInclude Include="util\base.h" />
+    <ClInclude Include="util\bitstream.h" />
+    <ClInclude Include="util\bmem.h" />
+    <ClInclude Include="util\cf-lexer.h" />
+    <ClInclude Include="util\cf-parser.h" />
+    <ClInclude Include="util\config-file.h" />
+    <ClInclude Include="util\crc32.h" />
+    <ClInclude Include="util\dstr.h" />
+    <ClInclude Include="util\file-serializer.h" />
+    <ClInclude Include="util\lexer.h" />
+    <ClInclude Include="util\obsconfig.h" />
+    <ClInclude Include="util\pipe.h" />
+    <ClInclude Include="util\platform.h" />
+    <ClInclude Include="util\profiler.h" />
+    <ClInclude Include="util\task.h" />
+    <ClInclude Include="util\text-lookup.h" />
+    <ClInclude Include="util\threading-windows.h" />
+    <ClInclude Include="util\utf8.h" />
+    <ClInclude Include="util\uthash.h" />
+    <ClInclude Include="util\util.hpp" />
+    <ClInclude Include="util\windows\device-enum.h" />
+    <ClInclude Include="util\windows\obfuscate.h" />
+    <ClInclude Include="util\windows\window-helpers.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

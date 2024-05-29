@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="obs.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-data.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-windows.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\platform.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\platform-windows.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-win-crash-handler.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-view.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-module.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-source.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-audio-controls.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-audio.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="audio-monitoring\win32\wasapi-enum-devices.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="audio-monitoring\win32\wasapi-monitoring-available.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="audio-monitoring\win32\wasapi-output.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-display.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-source-transition.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-source-deinterlace.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-scene.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-output.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-output-delay.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-encoder.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-service.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\bmem.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\base.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\dstr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="media-io\audio-io.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="media-io\audio-resampler-ffmpeg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\threading-windows.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\profiler.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="callback\calldata.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="callback\decl.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="callback\proc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="callback\signal.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\lexer.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\cf-lexer.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\cf-parser.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\axisang.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\bounds.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\effect.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\effect-parser.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\graphics.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\graphics-ffmpeg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\graphics-imports.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\image-file.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\math-extra.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\matrix3.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\matrix4.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\plane.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\quat.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\shader-parser.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\texture-render.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\vec2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\vec3.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\vec4.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\libnsgif\libnsgif.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="media-io\format-conversion.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="media-io\media-remux.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="media-io\video-frame.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="media-io\video-io.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="media-io\video-scaler-ffmpeg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="media-io\video-matrices.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="media-io\video-fourcc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-properties.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-video.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-video-gpu-encode.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-hotkey-name-map.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-hotkey.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-hevc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-nal.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\array-serializer.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\bitstream.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\config-file.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\crc32.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\file-serializer.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\pipe.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\pipe-windows.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\task.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\text-lookup.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\utf8.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-av1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-avc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-missing-files.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\windows\window-helpers.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\windows\obfuscate.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\windows\device-enum.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="obs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-data.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uthash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\uthash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jansson.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jansson_config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\platform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\obsconfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-module.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-source.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-audio-controls.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="audio-monitoring\win32\wasapi-output.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-scene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-output.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-encoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-service.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\obsconfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\bmem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\base.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\dstr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="media-io\audio-io.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="media-io\audio-resampler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\threading-windows.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\profiler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="callback\calldata.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="callback\decl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="callback\proc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="callback\signal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\lexer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\cf-lexer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\cf-parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\axisang.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\bounds.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\effect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\effect-parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\graphics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\image-file.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\math-extra.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\matrix3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\matrix4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\plane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\quat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\shader-parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\vec2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\vec3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\vec4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\libnsgif\libnsgif.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="media-io\audio-math.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="media-io\format-conversion.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="media-io\frame-rate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="media-io\media-io-defs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="media-io\media-remux.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="media-io\video-frame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="media-io\video-io.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="media-io\video-scaler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-properties.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-hotkey.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-hevc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-nal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\array-serializer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\bitstream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\config-file.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\crc32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\file-serializer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\pipe.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\task.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\text-lookup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\utf8.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-av1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-avc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-missing-files.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\util.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\windows\window-helpers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\windows\obfuscate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\windows\device-enum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-ffmpeg-compat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

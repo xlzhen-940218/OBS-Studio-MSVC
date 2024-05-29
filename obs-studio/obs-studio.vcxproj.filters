@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="adv-audio-control.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="audio-encoders.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="auth-base.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="auth-listener.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="auth-oauth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="context-bar-controls.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="double-slider.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ffmpeg-utils.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="focus-list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="horizontal-scroll-area.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hotkey-edit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="item-widget-helpers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lineedit-autoresize.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="log-viewer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="media-controls.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="media-slider.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="menu-button.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="multiview.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obf.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-app.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-app-theming.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obs-proxy-style.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="plain-text-edit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="platform-windows.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="properties-view.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="qt-display.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="qt-wrappers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="record-button.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="remote-text.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="scene-tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="slider-absoluteset-style.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="slider-ignorewheel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source-label.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source-tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="spinbox-ignorewheel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ui-validation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="undo-stack-obs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="url-push-button.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vertical-scroll-area.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="volume-control.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="visibility-item-widget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-about.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-adv-audio.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-auto-config.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-filters.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-interaction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-main-outputs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-preview.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-properties.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-settings.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-source-select.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-status-bar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-transform.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-vcam-config.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-dock.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-dock-browser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-extra-browsers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-importer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-log-reply.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-missing-files.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-namedialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-projector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-remux.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="update\win-update.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="update\update-helpers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="update\update-window.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="update\shared-update.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="importers\importers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_adv-audio-control.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_auth-base.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_auth-listener.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_auth-oauth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_balance-slider.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_clickable-label.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_context-bar-controls.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_double-slider.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_focus-list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_horizontal-scroll-area.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_hotkey-edit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_lineedit-autoresize.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_log-viewer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_media-controls.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_media-slider.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_menu-button.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_mute-checkbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_obs-app.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_plain-text-edit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_properties-view.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_properties-view.moc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_qt-display.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_record-button.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_remote-text.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_scene-tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_screenshot-obj.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_slider-ignorewheel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_source-label.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_source-tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_spinbox-ignorewheel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_ui-validation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_undo-stack-obs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_url-push-button.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_vertical-scroll-area.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_visibility-item-widget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_volume-control.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-basic-about.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-basic-adv-audio.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-basic-auto-config.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-basic-filters.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-basic-interaction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-basic-main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-basic-preview.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-basic-properties.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-basic-settings.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-basic-source-select.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-basic-stats.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-basic-status-bar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-basic-transform.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-basic-vcam-config.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-dock.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-extra-browsers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-importer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-log-reply.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-missing-files.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-namedialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-projector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_window-remux.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-main-screenshot.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-main-transitions.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-settings-a11y.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-settings-appearance.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-settings-stream.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-main-browser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-main-dropfiles.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-main-icons.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-main-profiles.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-main-scene-collections.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-auto-config-test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="window-basic-stats.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="importers\sl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="importers\studio.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="importers\classic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="importers\xsplit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="win-dll-blocklist.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_shared-update.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_update-window.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_win-update.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="update\crypto-helpers-mbedtls.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="api-interface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="adv-audio-control.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="audio-encoders.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="auth-base.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="auth-listener.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="auth-oauth.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="balance-slider.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="clickable-label.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="context-bar-controls.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="display-helpers.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="double-slider.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ffmpeg-utils.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="focus-list.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="horizontal-scroll-area.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hotkey-edit.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="item-widget-helpers.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lineedit-autoresize.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="log-viewer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="media-controls.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="media-slider.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="menu-button.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="multiview.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mute-checkbox.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-app.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-app-theming.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="obs-proxy-style.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="plain-text-edit.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="platform.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="properties-view.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="properties-view.moc.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="qt-display.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="qt-wrappers.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="record-button.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="remote-text.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="scene-tree.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="screenshot-obj.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="slider-absoluteset-style.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="slider-ignorewheel.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source-label.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="source-tree.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="spinbox-ignorewheel.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui-validation.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="undo-stack-obs.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="url-push-button.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="visibility-item-widget.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vertical-scroll-area.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="volume-control.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-basic-about.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-basic-adv-audio.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-basic-auto-config.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-basic-filters.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-basic-interaction.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-basic-main.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-basic-main-outputs.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-basic-preview.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-basic-properties.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-basic-settings.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-basic-source-select.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-basic-status-bar.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-basic-transform.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-basic-vcam.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-basic-vcam-config.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-dock.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-dock-browser.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-extra-browsers.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-importer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-log-reply.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-main.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-missing-files.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-namedialog.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-projector.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-remux.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui-config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSBasic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="update\win-update.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="update\update-helpers.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="update\update-window.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="update\shared-update.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSUpdate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_ColorSelect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_AutoConfigStartPage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_AutoConfigVideoPage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_AutoConfigStreamPage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSMissingFiles.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSImporter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSLogReply.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSLogViewer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSRemux.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSExtraBrowsers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSBasicFilters.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSBasicInteraction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSBasicProperties.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSBasicSettings.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSBasicSourceSelect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSBasicTransform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSBasicVCamConfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="importers\importers.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="window-basic-stats.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="update\models\branches.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="update\models\whatsnew.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="update\crypto-helpers.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSAbout.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_OBSAdvAudio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_StatusBarWidget.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_browser-source-toolbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_color-source-toolbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_device-select-toolbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_game-capture-toolbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_image-source-toolbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_media-controls.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_AutoConfigTestPage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_text-source-toolbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="obs-studio.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
